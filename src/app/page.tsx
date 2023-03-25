@@ -1,9 +1,10 @@
-import Wrapper from "@/components/Wrapper";
+import Header from "@/components/Header";
+
 
 const Home = () => (
-	<Wrapper>
-		<h1 className="text-center text-4xl font-bold">Hello World!</h1>
-	</Wrapper>
+	<>
+		<Header />
+	</>
 );
 
 export default Home;

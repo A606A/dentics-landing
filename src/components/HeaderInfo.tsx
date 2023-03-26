@@ -1,3 +1,4 @@
+import twclsx from "@/utils/twclsx";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 interface IProps
@@ -8,7 +9,7 @@ interface IProps
 }
 
 const HeaderInfo = ({ Icon, text, className = "", ...rest }: IProps) => (
-	<div className="flex items-center gap-1" {...rest}>
+	<div className={twclsx("flex items-center gap-1", className)} {...rest}>
 		{Icon}
 		{text}
 	</div>

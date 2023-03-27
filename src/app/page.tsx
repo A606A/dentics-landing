@@ -1,3 +1,4 @@
+import Benefits from "@/components/Benefits";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HowTo from "@/components/HowTo";
@@ -10,6 +11,7 @@ const Home = () => (
 		<Hero />
 		<HowTo />
 		<Services />
+		<Benefits />
 	</>
 );
 

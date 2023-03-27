@@ -18,7 +18,7 @@ const FlexSection = ({
 	<section className={twclsx("w-full py-24", sectionClassName)} {...rest}>
 		<Wrapper
 			className={twclsx(
-				"w-full flex justify-between items-center gap-20",
+				"w-full flex justify-between items-center gap-x-20 flex-wrap",
 				wrapperClassName
 			)}
 		>

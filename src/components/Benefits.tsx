@@ -11,14 +11,15 @@ const Benefits = () => (
 		<SectionHeading
 			direction="left"
 			title={
-				<h2 className="flex-1 text-4xl font-semibold tracking-wide">
-					Що робить нашу клініку <span className="text-[2.6rem] font-bold">видатною</span>
-				</h2>
+				<>
+					Що робить нашу клініку{" "}
+					<span className="text-[2.6rem] font-bold">видатною</span>
+				</>
 			}
 			subtitle={
-				<h3 className="flex-1 text-4xl font-semibold text-right">
+				<>
 					Наші <span className="text-accent">особливості</span>
-				</h3>
+				</>
 			}
 		/>
 		<div className="mt-20 flex gap-14 w-full justify-between items-center">

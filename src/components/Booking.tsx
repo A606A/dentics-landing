@@ -10,15 +10,15 @@ const Booking = () => (
 			className="mb-20"
 			direction="left"
 			title={
-				<h2 className="flex-1 text-4xl font-semibold tracking-wide">
+				<>
 					Запишіться на консультацію{" "}
 					<span className="text-[2.6rem] font-bold">вже сьогодні</span>
-				</h2>
+				</>
 			}
 			subtitle={
-				<h3 className="flex-1 text-4xl font-semibold text-right">
+				<>
 					Ми чекаємо на <span className="text-accent">Вас</span>
-				</h3>
+				</>
 			}
 		/>
 		<div className="flex-1">

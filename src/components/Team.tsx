@@ -12,15 +12,15 @@ const Team = () => (
 			<SectionHeading
 				direction="right"
 				title={
-					<h2 className="flex-1 text-4xl font-semibold tracking-wide text-right">
+					<>
 						Зустрічайте нашу команду{" "}
 						<span className="text-[2.6rem] font-bold">професіоналів</span>
-					</h2>
+					</>
 				}
 				subtitle={
-					<h3 className="flex-1 text-4xl font-semibold">
+					<>
 						Наші <span className="text-accent">найкращі</span> спеціалісти
-					</h3>
+					</>
 				}
 			/>
 			<div className="mt-20">

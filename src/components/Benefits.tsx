@@ -22,14 +22,14 @@ const Benefits = () => (
 				</>
 			}
 		/>
-		<div className="mt-20 flex gap-14 w-full justify-between items-center">
+		<div className="mt-20 flex gap-4 lg:gap-14 w-full justify-between flex-col sm:flex-row">
 			<BenefitItem
 				Icon={<Image className="w-24 h-24" src={laserImage} alt="laser" />}
 				name="Сучасні лазери"
 				description="Продвинуті Диодні лазери. Ваше лікування буде швидким та безболісним"
 			/>
 			<BenefitItem
-				className="mt-12"
+				className="lg:mt-12"
 				Icon={<Image className="w-24 h-24" src={scannerImage} alt="scanner" />}
 				name="3D сканери"
 				description="Високотехнологічні 3D сканери роблять швидкісні знімки в автоматичному режимі"

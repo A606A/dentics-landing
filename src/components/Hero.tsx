@@ -23,7 +23,7 @@ const Hero = () => (
                 </ButtonLink>
             </div>
 		</div>
-		<div className="flex-1">
+		<div className="flex-1 hidden lg:block">
 			<Image className="w-full" src={heroImage} alt="hero" />
 		</div>
 	</FlexSection>

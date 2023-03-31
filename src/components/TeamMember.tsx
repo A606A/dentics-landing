@@ -8,8 +8,8 @@ interface IProps {
 }
 
 const TeamMember = ({ image, name, occupation }: IProps) => (
-	<div className="px-7 text-center">
-		<Image className="w-full" src={image} alt="dr1" />
+	<div className="px-7 flex flex-col items-center text-center">
+		<Image className="w-full max-w-[12rem]" src={image} alt="dr1" />
 		<p className="mt-7 text-lg">{name}</p>
 		<p className="mt-2 text-secondary">{occupation}</p>
 		<ButtonLink

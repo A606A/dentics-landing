@@ -11,7 +11,7 @@ interface IProps
 const HowToStep = ({ Icon, text, className = "", ...rest }: IProps) => (
 	<div
 		className={twclsx(
-			"p-6 flex flex-col items-center text-center rounded-2xl bg-white",
+			"p-6 flex items-center gap-x-3 rounded-2xl bg-white sm:flex-col sm:text-center sm:gap-x-0",
 			className
 		)}
 		{...rest}

@@ -4,10 +4,11 @@ import { BsTelephone, BsClock } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 import Link from "next/link";
 import ButtonLink from "./ButtonLink";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const Header = () => (
 	<header className="w-full bg-white shadow-sm">
-		<div className="w-full py-2 border-b border-[#88888830]">
+		<div className="w-full py-2 border-b border-[#88888830] hidden sm:block">
 			<Wrapper className="flex items-center gap-4 text-xs text-secondary font-medium">
 				<HeaderInfo Icon={<BsTelephone />} text="098 988 8888" />
 				<HeaderInfo Icon={<BsTelephone />} text="095 985 8585" />
@@ -17,24 +18,27 @@ const Header = () => (
 		</div>
 		<div className="w-full py-4">
 			<Wrapper className="flex items-center justify-between">
-                <Link className="text-2xl font-bold transition hover:opacity-80" href="/">
-                    <span className="text-accent">Dent</span>ics
-                </Link>
-                <div className="flex items-center gap-7 text-sm font-medium">
-                    <Link className="transition hover:text-accent" href="#services">
-                        Послуги
-                    </Link>
-                    <Link className="transition hover:text-accent" href="#benefits">
-                        Переваги
-                    </Link>
-                    <Link className="transition hover:text-accent" href="#team">
-                        Спеціалісти
-                    </Link>
-                    <ButtonLink className="px-7 py-3" href="#booking">
-                        Консультація
-                    </ButtonLink>
-                </div>
-            </Wrapper>
+				<Link className="text-2xl font-bold transition hover:opacity-80" href="/">
+					<span className="text-accent">Dent</span>ics
+				</Link>
+				<div className="hidden md:flex items-center gap-7 text-sm font-medium">
+					<Link className="transition hover:text-accent" href="#services">
+						Послуги
+					</Link>
+					<Link className="transition hover:text-accent" href="#benefits">
+						Переваги
+					</Link>
+					<Link className="transition hover:text-accent" href="#team">
+						Спеціалісти
+					</Link>
+					<ButtonLink className="px-7 py-3" href="#booking">
+						Консультація
+					</ButtonLink>
+				</div>
+				<button className="md:hidden block">
+					<HiOutlineMenuAlt3 className="w-8 h-8" />
+				</button>
+			</Wrapper>
 		</div>
 	</header>
 );

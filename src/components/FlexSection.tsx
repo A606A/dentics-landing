@@ -15,10 +15,11 @@ const FlexSection = ({
 	wrapperClassName = "",
 	...rest
 }: IProps) => (
-	<section className={twclsx("w-full py-24", sectionClassName)} {...rest}>
+	<section className={twclsx("w-full py-16 lg:py-24", sectionClassName)} {...rest}>
 		<Wrapper
 			className={twclsx(
-				"w-full flex justify-between items-center gap-x-20 flex-wrap",
+				"w-full flex flex-col max-w-3xl ml-0",
+				"lg:max-w-[1248px] lg:ml-auto lg:items-center lg:justify-between lg:gap-x-20 lg:flex-row lg:flex-wrap",
 				wrapperClassName
 			)}
 		>

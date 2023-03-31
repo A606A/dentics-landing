@@ -17,23 +17,23 @@ const SectionHeading = ({ direction, title, subtitle, className = "" }: IProps) 
 	>
 		<h2
 			className={twclsx(
-				"flex-1 text-4xl font-semibold tracking-wide",
-				direction === "left" ? "text-left" : "text-right"
+				"flex-1 text-3xl xl:text-4xl font-semibold tracking-wide",
+				direction === "left" ? "lg:text-left" : "lg:text-right"
 			)}
 		>
 			{title}
 		</h2>
 		<h3
 			className={twclsx(
-				"flex-1 text-4xl font-semibold",
-				direction === "left" ? "text-right" : "text-left"
+				"flex-1 text-3xl xl:text-4xl font-semibold hidden lg:block",
+				direction === "left" ? "text-right" : "text-left",
 			)}
 		>
 			{subtitle}
 		</h3>
 		<hr
 			className={twclsx(
-				"absolute bottom-0 w-2/3 h-[1px] bg-[#88888830]",
+				"absolute bottom-0 w-2/3 h-[1px] bg-[#88888830] hidden lg:block",
 				direction === "left" ? "right-0" : "left-0"
 			)}
 		/>

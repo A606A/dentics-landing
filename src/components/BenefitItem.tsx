@@ -12,7 +12,7 @@ interface IProps
 const BenefitItem = ({ Icon, name, description, className = "", ...rest }: IProps) => (
 	<div
 		className={twclsx(
-			"py-10 px-8 flex flex-col items-center text-center rounded-2xl bg-[#8888880c]",
+			"flex-1 py-10 px-8 flex flex-col items-center text-center rounded-2xl bg-[#8888880c]",
 			className
 		)}
 		{...rest}

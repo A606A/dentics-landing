@@ -7,7 +7,7 @@ import TeamMember from "./TeamMember";
 import Carousel from "./Carousel";
 
 const Team = () => (
-	<section>
+	<section id="team">
 		<Wrapper>
 			<SectionHeading
 				direction="right"

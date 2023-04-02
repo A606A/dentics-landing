@@ -7,7 +7,7 @@ import BenefitItem from "./BenefitItem";
 import SectionHeading from "./SectionHeading";
 
 const Benefits = () => (
-	<FlexSection>
+	<FlexSection id="benefits">
 		<SectionHeading
 			direction="left"
 			title={

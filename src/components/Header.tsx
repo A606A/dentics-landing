@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import HeaderInfo from "./HeaderInfo";
 import Wrapper from "./Wrapper";
@@ -38,15 +38,15 @@ const Header = () => {
 						<span className="text-accent">Dent</span>ics
 					</Link>
 					<div className="hidden md:flex items-center gap-7 text-sm font-medium">
-						<Link className="transition hover:text-accent" href="#services">
+						<a className="transition hover:text-accent" href="#services">
 							Послуги
-						</Link>
-						<Link className="transition hover:text-accent" href="#benefits">
+						</a>
+						<a className="transition hover:text-accent" href="#benefits">
 							Переваги
-						</Link>
-						<Link className="transition hover:text-accent" href="#team">
+						</a>
+						<a className="transition hover:text-accent" href="#team">
 							Спеціалісти
-						</Link>
+						</a>
 						<ButtonLink className="px-7 py-3" href="#booking">
 							Консультація
 						</ButtonLink>

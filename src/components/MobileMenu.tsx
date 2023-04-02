@@ -3,7 +3,6 @@ import FocusLock from "react-focus-lock";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { Ref } from "react";
 import twclsx from "@/utils/twclsx";
-import Link from "next/link";
 
 interface IProps {
 	isOpen: boolean;
@@ -35,34 +34,34 @@ const MobileMenu = ({ isOpen = false, onCloseClick, menuRef }: IProps) => (
 				<AiOutlineCloseCircle className="w-8 h-8" />
 			</button>
 			<nav className="m-auto flex flex-col items-start text-lg font-medium gap-5">
-				<Link
+				<a
 					className="transition hover:text-accent"
 					href="#services"
 					onClick={onCloseClick}
 				>
 					Послуги
-				</Link>
-				<Link
+				</a>
+				<a
 					className="transition hover:text-accent"
 					href="#benefits"
 					onClick={onCloseClick}
 				>
 					Переваги
-				</Link>
-				<Link
+				</a>
+				<a
 					className="transition hover:text-accent"
 					href="#team"
 					onClick={onCloseClick}
 				>
 					Спеціалісти
-				</Link>
-				<Link
+				</a>
+				<a
 					className="transition hover:text-accent"
 					href="#booking"
 					onClick={onCloseClick}
 				>
 					Консультація
-				</Link>
+				</a>
 			</nav>
 		</FocusLock>
 	</div>

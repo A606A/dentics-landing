@@ -5,7 +5,7 @@ import { AiOutlineSafety } from "react-icons/ai";
 import twclsx from "@/utils/twclsx";
 
 const Services = () => (
-	<FlexSection sectionClassName="relative" wrapperClassName="items-start">
+	<FlexSection sectionClassName="relative" wrapperClassName="items-start" id="services">
 		<div
 			className={twclsx(
 				"absolute left-0 top-0 w-full lg:w-[calc(50%-2.5rem)] h-full bg-[#8888880c]",

@@ -5,7 +5,7 @@ import Image from "next/image";
 import twclsx from "@/utils/twclsx";
 
 const Booking = () => (
-	<FlexSection>
+	<FlexSection id="booking">
 		<SectionHeading
 			className="mb-20"
 			direction="left"

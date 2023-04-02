@@ -1,8 +1,11 @@
-import clsx from "clsx";
-import Link, { LinkProps } from "next/link";
+import { DetailedHTMLProps, AnchorHTMLAttributes } from "react";
 import twclsx from "../utils/twclsx";
 
-interface IProps extends LinkProps {
+interface IProps
+	extends DetailedHTMLProps<
+		AnchorHTMLAttributes<HTMLAnchorElement>,
+		HTMLAnchorElement
+	> {
 	href: string;
 	children: React.ReactNode;
 	variant?: "primary" | "secondary";
@@ -17,7 +20,7 @@ const ButtonLink = ({
 	className = "",
 	...rest
 }: IProps) => (
-	<Link
+	<a
 		href={href}
 		className={twclsx(
 			"block max-w-fit px-8 py-4 rounded-lg select-none transition duration-150",
@@ -29,7 +32,7 @@ const ButtonLink = ({
 		{...rest}
 	>
 		{children}
-	</Link>
+	</a>
 );
 
 export default ButtonLink;
